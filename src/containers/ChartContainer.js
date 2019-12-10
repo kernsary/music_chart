@@ -1,4 +1,5 @@
 import React from 'react'
+import ChartList from '../components/ChartList'
 
 class ChartContainer extends React.Component {
 
@@ -21,7 +22,8 @@ class ChartContainer extends React.Component {
   render(){
     return(
       <div>
-      <h1>This is the ChartContainer</h1>
+      <h1>The UK Top 20</h1>
+      <ChartList songs={this.state.songs}/>
       </div>
     )
   }
